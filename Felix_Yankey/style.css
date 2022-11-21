@@ -1,0 +1,297 @@
+.content{
+    display: inline-flex;
+    
+    }
+    
+    .contact{
+    display: block;
+    }
+
+    a{
+    text-decoration: none;
+    color: blue;
+    }
+
+    a :hover{
+        color: yellow
+    }
+
+    .profile a{
+        color: blue;
+    }
+    .profile  :hover{
+        color:yellow
+    }
+    
+    .identity{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    height: 100%;
+    background-color: black;
+    }
+    .identity img{
+    
+    clip-path: circle(35% at 50% 50%);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+    
+    .identity h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 255);
+    margin: 60px auto;
+    margin-bottom: 0;   
+    }
+    
+    .contact p{
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    margin-top: 0;
+    text-align: justify;
+    }
+    .underline{
+    height: 2px;
+    margin: 20px 25px;
+    margin-top: 0;
+    background-color: white;
+    box-sizing: border-box;
+    }
+    
+    .break-line{
+    height: 2px;
+    margin: 40px 60px;
+    background-color:wheat;
+    }
+    .skills h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 255);
+    margin: 40px auto;
+    margin-bottom: 0;   
+    }
+    
+    .underloop{
+    height: 2px;
+    margin: 20px 80px;
+    margin-top: 0;
+    background-color: white;
+    }
+    .skills p{
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    margin-bottom: 0;
+    text-align: left;
+    }
+    .skill-col{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 20%, rgb(255, 255, 255));
+    size: 20vmin;
+    }
+    .skill-co{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 70%, rgb(255, 255, 255));
+    }
+    .skill-c{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 30%, rgb(255, 255, 255));
+    }
+    .skill{
+    margin: 5px auto; 
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 40%, rgb(255, 255, 255));
+    }
+    .languages h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+    margin: 40px auto;
+    margin-bottom: 0;
+    }
+    .underlin{
+    height: 2px;
+    margin: 20px 50px;
+    margin-top: 0;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    }
+    .languages p{
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    margin-bottom: 0;
+    text-align: left;
+    }
+    .lang-en{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 90%, rgb(255, 255, 255));
+    }
+    .lang-tw{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 100%, rgb(255, 255, 255));
+    }
+    .lang-nz{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    height: 2px;
+    width: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), 100%, rgb(255, 255, 255));
+    }
+    
+   
+    
+    .heading h1{
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+     color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    }
+    .heading h3{
+    text-align: center;
+    padding-top: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 5px;
+    }
+    .body h2{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+    margin: 0 50px;
+    margin-bottom: 0;
+    background-color: aquamarine;
+    }
+    .under{
+    height: 2px;
+    margin: 15px 50px;
+    margin-top: 0;
+    background-color: black;
+    box-sizing: border-box;
+    display: inline-block;
+    }
+    .body p{
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 30px 50px;
+    margin-top: 0;
+    background-color: whitesmoke;
+    }
+    .work h3{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: blue;
+    margin-bottom: 5px;
+    }
+    .work h4{
+    text-align: left;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: blue;
+    margin: 0 50px;
+    margin-bottom: 15px;
+    
+    }
+    .work span{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: blue;
+    margin: 0 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    }
+    .work a{
+    color: blue;
+    text-decoration: none;
+    }
+    .work p :hover{
+        color: yellow;
+    }
+    .edu h3{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: blue;
+    margin-bottom: 5px;
+    }
+    .edu h4{
+    text-align: left;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 0 50px;
+    margin-bottom: 15px;
+    }
+    .edu span{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: blue;
+    margin: 0 25px;
+    margin-right: 20px;
+    margin-bottom: 10px
+    }
+    
+    .edu a{
+    color:blue;
+    text-decoration: none;
+    }
+    .edu a :hover{
+        color: yellow;
+    }
+    
+    body{
+        background-color: white;
+    }
+    .heading {
+        position: relative;
+        background-color: blue;
+        background-image: linear-gradient(315deg,
+                        #100cf0 0%, #4707f8 74%);
+    }
+      svg{
+        height: 1cm;
+        width: auto;
+      }
+   

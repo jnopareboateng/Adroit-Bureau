@@ -1,0 +1,89 @@
+
+* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(99, 95, 104);
+    position:relative;
+}
+ul{
+    list-style: disc;
+}
+main{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-gap: 0;
+}
+.personal, .skilss, .languages{
+    padding: 1rem;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left{
+    background-color:rgb(1, 1, 19);
+}
+.left-image{
+    position: relative;
+}
+.right{
+    background-color: white;
+    /* padding: 1.5rem; */
+}
+.name{
+    line-height: 0;
+}
+.student{
+    line-height: 0;
+}
+.experience, .education{
+    line-height: 2;
+}
+.experience ul{
+    margin: 2rem 0;
+}
+.left-image img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    clip-path: circle(35% at 50% 50%);
+    
+}
+.left-image h2{
+    position: relative;
+    bottom: 0;
+    left: 1rem;
+}
+.education{
+    margin-top: 1rem;
+}
+.education ul{
+    margin: 2rem o;
+}
+
+li{
+    list-style-type: none;
+}
+.name{
+    color: blue;
+    text-size-adjust: 3px;
+}
+.contact, .skill, .language{
+    color:blue
+}
+.one{
+    color: antiquewhite;
+}
+.profile, .experience, .education{
+    color: black;
+}
+
+.name{background-image: url(blue-wallpaper-4.jpg);width: 100%;color: antiquewhite;line-height: 2rem;margin: auto;}
+.student{
+    background-image: url(blue-wallpaper-4.jpg);
+    width: 100%;
+    color: antiquewhite;
+    line-height: 1rem;
+}

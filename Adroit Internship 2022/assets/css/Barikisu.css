@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
 {
-    margin:0;
-    padding:0;
-    box-sizing:border-box
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     font-family:'Poppins',sans-serif;
 }
 
 body{
     background: lightblue;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
 .container{
-    position:relative;
+    position: relative;
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
@@ -34,7 +34,7 @@ margin:50px;
 }
 
 .profileText{
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,19 +43,19 @@ margin:50px;
 }
 
 .profileText .ImgBx{
-    position:relative;
-    width:200px;
+    position: relative;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .profileText .ImgBx img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 
 }
@@ -64,7 +64,7 @@ margin:50px;
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
@@ -83,20 +83,20 @@ margin:50px;
 .title{
     color:#fff;
     text-transform: uppercase;
-    font-weight:600;
-    letter-spacing:1px;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
 .contactInfo ul{
-    position:relative;
+    position: relative;
 }
 
 .contactInfo ul li{
-    position:relative;
+    position: relative;
     list-style: none;
-    margin:10px 0;
-    cursor:pointer;
+    margin: 10px 0;
+    cursor: pointer;
 
 }
 

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV | Felix Quacoe Baidoo</title>
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: darkgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            cursor: alias;
+        
+        }
+
+        .container{
+            position: relative;
+            margin: 10px;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+        }
+
+        .container .left_side{
+            position: relative;
+            background: #003147;
+            padding: 30px;
+        }
+
+        .profiletext{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .break-line{
+            height: 1px;
+            margin: 15px 0;
+            background-color:rgba(255, 255, 255, 0.2);
+            margin-bottom: 0;
+        }
+
+        .break{
+            height: 1px;
+            margin: 30px 0;
+            background-color:rgba(255, 255, 255, 0.2);
+            margin-bottom: 0;
+        }
+        
+        .profiletext .imgbx{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profiletext .imgbx img{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            object-fit: 100%;
+        }
+        .profiletext h2{
+            color: whitesmoke;
+            font-size: 1.5em;
+            margin: 0 0;
+            margin-top: 20px;
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 700;
+            line-height: 1.4em;
+            font-size: 20px;
+
+        }
+        .profiletext h2 span{
+            font-size: 0.8em;
+            font-weight: 200;
+        }
+
+        .contactinfo{
+            padding-top: 30px;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .contactinfo ul{
+            position: relative;
+        }
+
+        .contactinfo ul li{
+            list-style: none;
+            position: relative;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .contactinfo ul li .icon{
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: #03a9f4;
+        }
+        .contactinfo ul li span{
+            color: whitesmoke;
+            font-weight: 200;
+        }
+        .contactinfo.education li{
+            margin-bottom: 15px;
+        }
+        .contactinfo.education h5{
+            color: #03a9f4;
+           
+            font-style: italic;
+        }
+        .contactinfo.education h4:nth-child(2){
+            color: whitesmoke;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .contactinfo.education h4{
+            color: whitesmoke;
+            font-weight: 200;
+        }
+        .contactinfo.lang .percent{
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: rgb(26, 25, 25);
+            display: block;
+            margin-top: 5px;
+        }
+        .contactinfo.lang .percent div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03a9f4;
+        }
+        .container .right_side{
+            position: relative;
+            background: whitesmoke;
+            padding: 40px;
+        }
+
+        .right_side .about{
+            margin-bottom: 50px;
+        }
+        .about:last-child{
+            margin-bottom: 0;
+        }
+        .title2{
+            color:#003147;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .under{
+          height: 1px;
+          margin: 10px 0;
+          margin-top: 0;
+          background-color: darkgrey;
+          box-sizing: border-box;
+        }
+
+        p{
+            color: #333;
+            text-align: justify;
+        }
+        p a{
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .about .box{
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+        .about .box .year_company{
+            min-width: 150px;
+        }
+        .about .box .year_company h5{
+            text-transform: uppercase;
+            color: #848c90;
+           
+        }
+        .about .box .text h4{
+            text-transform: uppercase;
+            color: #2a7da2;
+            font-size: 16px;
+        }
+
+        .about.skills .box{
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .about.skills .box h4{
+            text-transform: uppercase;
+            color: #848c99;
+            font-weight: 600;
+        }
+        .about.skills .box .percent{
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background: rgba(169, 169, 169, 0.521);
+        }
+
+        .about.skills .box .percent div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #02567e;
+        }
+
+        .interest ul{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px 20px;
+            margin-bottom: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+        .interest ul li{
+            color: #b3def1;
+            font-size: 25px;
+            width: 20px;
+        }
+        @media (max-width: 1000px) {
+            .container{
+                margin: 10px;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .interest ul{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width: 1000px){
+            .about .box{
+                flex-direction: column;
+            }
+            .about .box .year_company{
+                margin-bottom: 5px;
+            }
+            .interest ul{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profiletext">
+                <div class="imgbx">
+                    <img src="fqbaidoo.jpg">
+                </div>
+                <h2>FELIX QUACOE BAIDOO<br><span>Intern-Adroit Bureau</span></h2>
+            </div>
+            <div class="contactinfo">
+                <h3 class="title">Contact Info <i class="fa fa-id-card" aria-hidden="true"></i></h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+233 54 018 4588</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">quacoefelix@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">Felix Quacoe Baidoo</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <span class="text">fqbaidoo</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">KNUST-Kumasi, Ghana</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="break-line"></div>
+            <div class="contactinfo education">
+                <h3 class="title">Education <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                <ul>
+                    <li>
+                        <h5>2022 - 2025</h5>
+                        <h4>Bachelor of Science in Land Economy</h4>
+                        <h4>Kwame Nkrumah University Of Science and Technology</h4>
+                    </li>
+                    <li>
+                        <h5>2016 - 2019</h5>
+                        <h4>WASSCE - General Arts</h4>
+                        <h4>Jukwa Senior High Technical School</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="break-line"></div>
+            <div class="contactinfo lang">
+                <h3 class="title">Languages <i class="fa fa-language" aria-hidden="true"></i></h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width: 100%;"></div>
+                        </span>
+                    
+                    </li>
+                    <li>
+                        <span class="text">Akan</span>
+                        <span class="percent"><div style="width: 100%;"></div></span>
+                    </li>
+                    <li>
+                        <span class="text">French</span>
+                        <span class="percent"><div style="width: 20%;"></div></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="break"></div>
+            <div class="contactinfo interest">
+                <h3 class="title">Interest <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h3>
+                <ul>
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-camera-retro" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-bicycle" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-cutlery" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile  <span><i class="fa fa-user" aria-hidden="true"></i></span></h2>
+                <div class="under"></div>
+                <p>I aspire to be a property lawyer in the near future. Seeking to add value to my life, I have acquired basic knowledge on html and css for web development through Youtube videos and series of training both online at <a href="freecodecamp.org">freecodecamp.org</a> and in person with <a href="adroitbureau.com">Adroit Bureau</a>
+                    I look forward to becoming a professional web developer in the not-so-distant future. <br><br>I am a nice fun and friendly person, I am honest and punctual, I work well in a team but also on my own as I like to set for myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience <span><i class="fa fa-briefcase" aria-hidden="true"></i></span></h2>
+                <div class="under"></div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2022</h5>
+                        <h5>Adroit Bureau</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Intern</h4>
+                        <p>Interned at <a href="adroitbureau.com">Adroit Bureau</a> for a 6-week period. Within that period, I gained basic knowledge on SQL, Git and GitHub, and operating the Adroit ERP. I also gained some more knowledge on Html and CSS through constant practice from weekly tasks given.<br>Over the same period, I worked with a team as representatives for Adroit Bureau at Tema Christian Eye Centre, inputting patients details and uploading their records onto the Adroit ERP.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2021</h5>
+                        <h5>Ghana Statiscal Service</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Field Officer</h4>
+                        <p>I worked as a field officer(enumerator) during the 2022 Population and Housing Census through which I developed better Communication skills via interactions with people which involved constant probing to get and honest answers.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="about skills">
+                <h2 class="title2">Skills <span><i class="fa fa-line-chart" aria-hidden="true"></i></span></h2>
+                <div class="under"></div>
+                <div class="box">
+                    <h4>Html</h4>
+                    <div class="percent"><div style="width: 88%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent"><div style="width: 75%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>SQL</h4>
+                    <div class="percent"><div style="width: 40%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>GitHub</h4>
+                    <div class="percent"><div style="width: 20%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Teamwork</h4>
+                    <div class="percent"><div style="width: 93%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Leadership</h4>
+                    <div class="percent"><div style="width: 74%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Organization</h4>
+                    <div class="percent"><div style="width: 88%;"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Communication</h4>
+                    <div class="percent"><div style="width: 69%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

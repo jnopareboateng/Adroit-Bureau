@@ -1,0 +1,77 @@
+/* @import url('https://font.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-fammily:'popins' ans-
+{
+    body: */
+
+
+#contact{
+    font-size: large;
+}
+
+body{
+    background-color: #eee;
+}
+
+.spacebar{
+    height: 2px ;
+    margin:  20px auto 10px auto;
+    width: 50%;
+
+    background-color: #eeff;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100% 100%;
+    gap: 5px;
+    padding: 10px;
+    margin: auto;
+}
+
+.left_side{
+    background-color: rgb(20,30,40);
+    color: aqua;
+    text-align: center;
+}
+
+.left_side h2{
+    color: blue;
+    text-align: center;
+}
+
+/* .left_side h2{
+   color:blue
+}
+
+.left_side h3{
+    color:blue
+} */
+
+
+h2{
+    
+    padding-top: 5px;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width:  180px;
+    height: 180px;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.bg-img{
+    background-image: url(wave-haikei.svg);
+    width: 100%;
+}

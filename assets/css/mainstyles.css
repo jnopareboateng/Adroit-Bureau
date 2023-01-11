@@ -721,6 +721,9 @@ body {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -776,7 +779,7 @@ body {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-  
+
   /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/

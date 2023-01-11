@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lan="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewort" content="width=device-width, initial-scale=1.0" />
+      <title>Felicity CV</title>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet"
+      />
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+        body {
+          display: flex;
+          flex-direction: row;
+          margin: 0;
+          background-color: rgba(192, 205, 240, 255);
+        }
+        img {
+          width: 15vw;
+          border-radius: 50%;
+          border-width: 0.3em;
+          border-color: white;
+          border-style: solid;
+          box-shadow: 10px, 10px grey;
+          margin-top: 5em;
+        }
+        .leftsection {
+          flex: 1;
+          display: flex;
+          align-items: center;
+
+          flex-direction: column;
+          background-color: rgba(29, 41, 57, 255);
+        }
+
+        .rightsection > * {
+          padding-left: 4em;
+          font-family: "Source Sans Pro", sans-serif;
+        }
+
+        .rightsection {
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(255, 255, 255, 255);
+        }
+        .head {
+          color: rgba(47, 109, 230, 255);
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1em;
+          text-align: center;
+        }
+        .name {
+          color: white;
+          font-size: 2.5em;
+          padding-top: 2em;
+        }
+        .role {
+          color: rgba(137, 238, 225, 255);
+        }
+        .pcontact {
+          font-family: "Source Sans Pro", sans-serif;
+          color: white;
+          padding-left: 1em;
+        }
+        .skills .bar .info span {
+          font-family: "Source Sans Pro", sans-serif;
+        }
+        .planguagues {
+          font-family: "Source Sans Pro", sans-serif;
+        }
+        /* .contact {
+        }
+        .skills {
+        }
+        .languages {
+        } */
+        .rwrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          position: absolute;
+          top: 26em;
+        }
+        .material-icons-outlined {
+          color: rgba(74, 131, 132, 255);
+        }
+        .skills .progress-line {
+          position: relative;
+          height: 0.3em;
+          width: 60%;
+          background: #f0f0f0;
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+            0px 1px rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+        }
+        .skills .bar .info {
+          margin-bottom: 5px;
+          color: rgba(74, 131, 132, 255);
+        }
+        .bar .progress-line span {
+          height: 100%;
+          width: 80%;
+          background: rgba(86, 188, 239, 255);
+          position: absolute;
+          border-radius: 10px;
+        }
+        .progress-line.skill-1 span {
+          width: 90%;
+        }
+        .progress-line.skill-2 span {
+          width: 90%;
+        }
+        .progress-line.skill-3 span {
+          width: 85%;
+        }
+        .progress-line.skill-4 span {
+          width: 80%;
+        }
+        .progress-line.skill-5 span {
+          width: 85%;
+        }
+        .progress-line.skill-6 span {
+          width: 80%;
+        }
+        .progress-line.english span {
+          width: 95%;
+        }
+        .progress-line.chinese span {
+          width: 90%;
+        }
+        .progress-line.spanish span {
+          width: 90%;
+        }
+        .bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          padding-right: 0.8em;
+        }
+        .align {
+          display: flex;
+          padding-bottom: 1em;
+        }
+        .horizontal-line {
+          width: 30%;
+          height: 0.2em;
+          border: 0 none;
+          background-color: #606a83;
+        }
+        .horizontal_line {
+          min-width: 42%;
+          height: 0.15em;
+          border: 0 none;
+          background-color: rgba(129, 175, 240, 255);
+          padding-left: 2em;
+          position: absolute;
+          right: 0;
+        }
+        .horizontal_line.work {
+          min-width: 37%;
+        }
+        /*.cvheading::before{
+            content: '';
+            position: absolute;
+            background: blue;
+            top: 0;
+            min-height: 2em;
+            width: 100%;
+            border-radius: 50%/100% 50% 50% 50%/100% 50% 50% 100%;
+            transform: scaleX(1.1);
+        }*/
+        /*.cvheading{
+          background-color: blue;
+          height: 20em;
+          
+        }*/
+
+        /*
+        .custom-shape-divider-bottom-1671131708 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 0;
+          transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1671131708 svg {
+          position: relative;
+          display: block;
+          width: calc(280% + 1.3px);
+          height: 368px;
+        }
+
+        .custom-shape-divider-bottom-1671131708 .shape-fill {
+          fill: #ffffff;
+        }
+        */
+        .body-heads {
+          display: flex;
+          align-items: center;
+        }
+        h3 {
+          padding-left: 0.3em;
+        }
+        .body {
+          max-width: 35em;
+          color: grey;
+        }
+
+        /** For mobile devices **/
+        @media screen and (max-width: 767px) {
+          .body {
+            color: red;
+          }
+          .custom-shape-divider-bottom-1671131876 svg {
+            width: calc(280% + 1.3px);
+            height: 394px;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="leftsection">
+        <div class="image">
+          <img
+            src="http://drive.google.com/uc?export=view&id=1RkTcQDi0OCzfutQFiMN2jhYBhS9yXqgY"
+            alt="felicity pic"
+          />
+        </div>
+        <div class="rwrapper">
+          <div class="contact">
+            <p class="head">CONTACT</p>
+            <div class="align">
+              <span class="material-icons-outlined"> phone </span>
+              <span class="pcontact">+233 5097 9336</span>
+            </div>
+            <div class="align">
+              <span class="material-icons-outlined"> email </span>
+              <span class="pcontact">quaicoefelicityperpetua@gmail.com</span>
+            </div>
+            <div class="align">
+              <span class="material-icons-outlined"> location_on </span>
+
+              <span class="pcontact">Tarkwa, Western Region, Ghana</span>
+            </div>
+          </div>
+
+          <hr class="horizontal-line" />
+
+          <div class="skills">
+            <p class="head">SKILLS</p>
+            <div class="bar">
+              <div class="info"><span>HTML and CSS</span></div>
+              <div class="progress-line skill-1"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>SQL</span></div>
+              <div class="progress-line skill-2"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>Presentation</span></div>
+              <div class="progress-line skill-3"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>Ms Office</span></div>
+              <div class="progress-line skill-4"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>Communication</span></div>
+              <div class="progress-line skill-5"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>Team Player</span></div>
+              <div class="progress-line skill-6"><span></span></div>
+            </div>
+          </div>
+          <hr class="horizontal-line" />
+          <div class="skills">
+            <p class="head">LANGUAGES</p>
+            <div class="bar">
+              <div class="info"><span>English</span></div>
+              <div class="progress-line english"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><span>Akan</span></div>
+              <div class="progress-line chinese"><span></span></div>
+            </div>
+            <!----
+            <div class="bar">
+                <div class="info"><span>Spanish</span></div>
+                  <div class="progress-line spanish"><span></span></div>
+                </div>
+              -->
+          </div>
+        </div>
+      </div>
+      <div class="rightsection">
+        <div
+          class="cvheading"
+          style="
+            position: relative;
+            background-color: rgba(43, 95, 178, 255);
+            min-height: 15vh;
+          "
+        >
+          <!--
+          <div class="custom-shape-divider-bottom-1671131708">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          -->
+
+          <h1 class="name">FELICITY PERPETUA QUAICOE</h1>
+          <!--  <h2 class="role"></h2>  -->
+        </div>
+        <div class="profile">
+          <div style="margin-top: 3em" class="body-heads">
+            <span class="material-icons-outlined"> person_outline </span>
+            <h3>PROFILE</h3>
+            <hr class="horizontal_line" />
+          </div>
+          <p class="body">
+            I am a very strong headed, determined and open-minded person who
+            seeks to achieve every goal I set for myself. I am motivated by my
+            zeal to empower others to achieve greater heights
+          </p>
+        </div>
+        <div class="workexperience">
+          <div class="body-heads">
+            <span class="material-icons-outlined"> monitor </span>
+            <h3>WORK EXPERIENCE</h3>
+            <hr class="horizontal_line work" />
+          </div>
+          <ul>
+            <li>
+              <h4>INTERN, ADROIT CONSULT</h4>
+              <h5>Oct 2022 - Nov 2022</h5>
+              <p class="body"></p>
+            </li>
+            <li>
+              <h4>TEAM MEMBER, AIESEC IN KNUST</h4>
+              <h5>Jan 2022 - May 2022</h5>
+              <p class="body">
+                Attending all general and functional areaa meetings where I
+                learn about AISEC and good leadership skills. I am also
+                responsible for filling feedback forms related to my experience
+                as a member of AIESEC
+              </p>
+            </li>
+            <li>
+              <h4>TEAMSTER-CONFERENCE COMMITTEE, AIESEC IN GHANA</h4>
+              <h5>June 2022</h5>
+              <p class="body">
+                I was the conference Committee teamster, Special Events for the
+                national Youth and leadership Summit (NYLS'22) from 4th June -
+                9th June 2022. I was able to be a team player and also improved
+                on my planning skills.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="education">
+          <div class="body-heads">
+            <span class="material-icons-outlined"> school </span>
+            <h3>EDUCATION</h3>
+            <hr class="horizontal_line" />
+          </div>
+          <ul>
+            <li>
+              <h4>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</h4>
+              <h5>2022 - DATE</h5>
+              <p class="body">Bsc. Computer Science</p>
+            </li>
+            <li>
+              <h4>AHANTAMAN GIRLS' SHS</h4>
+              <h5>2017 - 2020</h5>
+              <p class="body">General Science</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
